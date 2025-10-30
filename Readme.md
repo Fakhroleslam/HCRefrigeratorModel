@@ -1,5 +1,5 @@
 # HCRefrigeratorModel
-This repository provides a structured and computationally efficient tool for researchers and engineers exploring hydrocarbon refrigerants and their impact on refrigeration system performance. The repository contains the simulation code for the paper "Hydrocarbon mixtures as Alternative Refrigerants in Household Refrigerators: Dynamic Modeling, Experimental Validation, and Parametric Study" published in Scientific Reports journal with doi code: xxxx.
+This repository provides a structured and computationally efficient tool for researchers and engineers exploring hydrocarbon refrigerants and their impact on refrigeration system performance. The repository contains the simulation code for the paper "Hydrocarbon mixtures as Alternative Refrigerants in Household Refrigerators: Dynamic Modeling, Experimental Validation, and Parametric Study", published in Scientific Reports journal with doi code: xxxx.
 
 This repository provides a simulation framework for studying refrigerators that use two-component hydrocarbon refrigerant mixtures. It combines a fast, regression-based thermodynamic model with detailed component-level calculations, making it possible to analyze system performance efficiently and reliably. The project begins with a base case using pure R600a refrigerant and then extends to binary mixtures such as R290:R600a, R290:R600, R290:R1270, R600a:R600, R600a:R1270, and R600:R1270. Within the code, refrigerant properties are estimated using regression for speed, and the refrigeration cycle is modeled through its major components.
 
@@ -31,8 +31,8 @@ The code follows a systematic approach:
      - Compressor model: work input and compression process
 3. Technical Performance Calculations
    - Key performance metrics (e.g. compressor work) are computed.
+4. Numerical Solution of ODEs
+   -Taylor series expansion is applied to solve the ordinary differential equations (ODEs) arising from the system’s dynamic or component-level modeling.
 
 ## Requirements
 The codes successfully worked on MATLAB version 9.14 (R2023a).
-4. Numerical Solution of ODEs
-   -Taylor series expansion is applied to solve the ordinary differential equations (ODEs) arising from the system’s dynamic or component-level modeling.
